@@ -1,0 +1,12 @@
+//HEADER
+.navbar-fixed-top > a{float:left;}
+.navbar-fixed-top > a:hover{background:none;}
+
+/* EDITAR NO STYLE.scss */
+.navbar-fixed-top > button{position:static;top:inherit;right:inherit;float:right;margin:8px 15px 0 0;}
+
+.navbar-fixed-top ul{float:right;margin:0;padding:0;margin:15px 0 0 0;}
+.navbar-fixed-top ul li{list-style:none;float:left;margin-right:15px;}
+
+.navbar-fixed-top ul li a:hover{background-color:#fff;text-decoration:none;color:inherit;}
+.navbar-fixed-top ul li a:focus{text-decoration:none;color:inherit;}

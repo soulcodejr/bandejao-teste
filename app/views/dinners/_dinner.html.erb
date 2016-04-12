@@ -1,0 +1,69 @@
+<%= form_for(@dinner, remote: true) do |f| %>
+<div class="form-group">
+  <%= f.label :date %>
+  <%= f.date_field :date, class: "form-control date" %>
+</div>
+
+<div class="form-group">
+  <%= f.label :soup %>
+  <%= f.text_field :soup, class: "form-control soup" %>
+</div>
+
+<div class="form-group">
+  <%= f.label :accompaniment1 %>
+  <%= f.text_field :accompaniment1, class: "form-control accompaniment1"   %>
+</div>
+
+
+<div class="form-group">
+  <%= f.label :accompaniment2 %>
+  <%= f.text_field :accompaniment2, class: "form-control accompaniment2"   %>
+</div>
+
+
+<div class="form-group">
+  <%= f.label :accompaniment3 %>
+  <%= f.text_field :accompaniment3, class: "form-control accompaniment3"   %>
+</div>
+
+
+<div class="form-group">
+  <%= f.label :garnish %>
+  <%= f.text_field :garnish, class: "form-control garnish"   %>
+</div>
+
+
+<div class="form-group">
+  <%= f.label :protein1 %>
+  <%= f.text_field :protein1, class: "form-control protein1"   %>
+</div>
+
+
+<div class="form-group">
+  <%= f.label :protein2 %>
+  <%= f.text_field :protein2, class: "form-control protein2"   %>
+</div>
+
+
+<div class="form-group">
+  <%= f.label :protein3 %>
+  <%= f.text_field :protein3, class: "form-control protein3"   %>
+</div>
+
+<div class="form-group">
+  <%= f.label :dessert %>
+  <%= f.text_field :dessert, class: "form-control dessert"   %>
+</div>
+
+
+<div class="form-group">
+  <%= f.label :juice %>
+  <%= f.text_field :juice, class: "form-control juice"   %>
+</div>
+
+<div class="form-group">
+  <%= f.submit  %>
+</div>
+
+<% end %>
+<%= link_to 'Back', :back %>

@@ -1,0 +1,19 @@
+<div class="container cont form-container">
+	<div class="text-center">
+		<button name="menu" checked  value="1" placeholder="Lunch" class="btn btn-blue btn-lunch active">Almoço</button>
+		<button name="menu"  value="2" placeholder="Dinner" class="btn btn-blue btn-dinner">Janta</button>
+	</div>
+	<div>
+		<div id="Menu1" class="desc">
+		 
+			<%= render :partial => "lunches/form", :locals => {:lunch => @lunches} %>
+		</div>
+
+		<div id="Menu2" class="desc" style="display: none;">
+
+	 
+			<%= render :partial => "dinners/form", :locals => {:dinner => @dinners} %>
+		</div>
+
+	</div>
+</div>

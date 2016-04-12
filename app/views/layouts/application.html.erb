@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Restaurante Universitário - UENF</title>
+  <%= render 'layouts/metatags' %>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= analytics_init if GoogleAnalytics.valid_tracker? %>
+  <%= csrf_meta_tags %>
+
+</head>
+<body>
+  <%= render "layouts/nav" %>
+
+  <p class="notice"><%= notice %></p>
+  <p class="alert"><%= alert %></p>
+
+  <div class="container main-content">
+   
+    
+    <%= yield %>  
+    
+  </div>
+  <%= render "layouts/footer" %>
+
+</body>
+</html>

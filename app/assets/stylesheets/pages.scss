@@ -1,0 +1,28 @@
+// Place all the styles related to the pages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.select-day{
+	width: 60%; 
+	border-radius: 0px;		
+	box-sizing: border-box;
+	margin-left: 20%;
+	position: relative;
+	margin-bottom: 15px;
+	text-align: center;
+}
+
+
+.dropdown > button > span{
+	float: right;
+	position: absolute;
+	right: 10px;
+	top: 10px;
+}
+
+.btn-blue{
+	background: #00B4F9;
+	border-color: #2589AE; 
+	font-size: 14px;
+	font-weight: bold;
+}
+ 

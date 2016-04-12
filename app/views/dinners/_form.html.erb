@@ -1,0 +1,85 @@
+<div id="container_dinners">
+<%= form_for(@dinner, remote: true, html: {id: "registerDinner"}) do |f| %>
+<div class="row">
+  <div class="col-md-6">
+     <div class="form-group">
+  <%= f.label :date, 'Data:' %>
+  <%= f.date_field :date, class: "form-control date" %>
+</div>
+
+<div class="form-group">
+  <%= f.label :soup, 'Sopa:' %>
+  <%= f.text_field :soup, class: "form-control soup" %>
+</div>
+
+<div class="form-group">
+  <%= f.label :accompaniment1, 'Acompanhamento 1:' %>
+  <%= f.text_field :accompaniment1, class: "form-control accompaniment1"   %>
+</div>
+
+
+<div class="form-group">
+  <%= f.label :accompaniment2, 'Acompanhamento 2:' %>
+  <%= f.text_field :accompaniment2, class: "form-control accompaniment2"   %>
+</div>
+
+      
+<div class="form-group">
+  <%= f.label :accompaniment3, 'Acompanhamento 3:' %>
+  <%= f.text_field :accompaniment3, class: "form-control accompaniment3"   %>
+</div>
+
+
+  </div>
+  <!-- col-md-6 -->
+  <div class="col-md-6">
+
+
+
+<div class="form-group">
+  <%= f.label :garnish, 'Guarnição:' %>
+  <%= f.text_field :garnish, class: "form-control garnish"   %>
+</div>
+
+
+<div class="form-group">
+  <%= f.label :protein1, 'Proteína 1:' %>
+  <%= f.text_field :protein1, class: "form-control protein1"   %>
+</div>
+
+
+<div class="form-group">
+  <%= f.label :protein2, 'Proteína 2:' %>
+  <%= f.text_field :protein2, class: "form-control protein2"   %>
+</div>
+
+
+<div class="form-group">
+  <%= f.label :dessert, 'Sobremesa:' %>
+  <%= f.text_field :dessert, class: "form-control dessert"   %>
+</div>
+
+
+<div class="form-group">
+  <%= f.label :juice, 'Suco:' %>
+  <%= f.text_field :juice, class: "form-control juice"   %>
+</div>
+
+<div class="form-group">
+</div>
+  </div>
+  <!-- col-md-6 -->
+ </div>
+
+<div class="row">
+  <div class="col-md-6 btn-wrapper">
+      <%= link_to 'Voltar', :back, class:'btn btn-warning control-btn', role:'button', method: :get %>
+  </div>
+  <div class="col-md-6 btn-wrapper">
+      <div class="form-group">
+    <%= f.submit 'Salvar', class: "btn btn-primary control-btn" %>
+  </div>
+  </div>
+</div>
+<% end %>
+</div>

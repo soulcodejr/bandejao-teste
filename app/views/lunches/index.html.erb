@@ -1,0 +1,23 @@
+<table class="table table-striped custab">
+    <thead>
+    
+        <tr>
+            <th>Date</th> 
+            <th class="text-center">Action</th>
+        </tr>
+    </thead>
+    <tbody>
+
+        <% @lunches.each do |lunch| %>
+            <tr>
+                <td><%= link_to lunch.date, lunch %></td> 
+                <td class="text-center">
+                <%= link_to '<span class="glyphicon glyphicon-edit"></span> Edit'.html_safe, edit_lunch_path(lunch), :class => "btn btn-info btn-xs" %>
+                <%= link_to '<span class="glyphicon glyphicon-remove"></span>Delete'.html_safe, lunch_path(lunch) , method: :delete ,data: { confirm: "Are you sure you want to delete this lunch?"}, class: "btn btn-danger btn-xs" %>
+                </td>
+            </tr>
+          <% end %>
+
+    </tbody>
+</table>
+<%= link_to '+ New Lunch', new_lunch_path, class: "btn btn-primary btn-xs pull-right" %>
