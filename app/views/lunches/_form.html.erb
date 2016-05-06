@@ -1,5 +1,5 @@
 <div id="container_lunches">
-<%= form_for(@lunch, remote: true, html: {id: "registerLunches"} ) do |f| %>
+<%= form_for(@lunch, remote: true, html: {id: "registerLunches", autocomplete: "off"} ) do |f| %>
 <div class="row">
   <div class="col-md-6">
 
@@ -11,27 +11,27 @@
 
 	<div class="form-group">
 		<%= f.label :protein1, 'Proteína 1:' %>
-		<%= f.text_field :protein1, class: "form-control protein1" %>
+		<%= f.text_field :protein1, class: "form-control protein1", list: "protein" %>
 	</div>
 
 	<div class="form-group">
 		<%= f.label :protein2, 'Proteína 2:' %>
-		<%= f.text_field :protein2, class: "form-control protein2" %>
+		<%= f.text_field :protein2, class: "form-control protein2", list: "protein" %>
 	</div>
 
 	<div class="form-group">
 		<%= f.label :protein3, 'Proteína 3:' %>
-		<%= f.text_field :protein3, class: "form-control protein3" %>
+		<%= f.text_field :protein3, class: "form-control protein3", list: "protein" %>
 	</div>
 
 	<div class="form-group">
-		<%= f.label :accompaniment1, 'Acompanhamento 1:' %>
-		<%= f.text_field :accompaniment1, class: "form-control accompaniment1" %>
+	  <%= f.label :accompaniment1, 'Acompanhamento 1:' %>
+	  <%= f.text_field :accompaniment1, class: "form-control accompaniment1" %>
 	</div>
 
 	<div class="form-group">
-		<%= f.label :accompaniment2, 'Acompanhamento 2:' %>
-		<%= f.text_field :accompaniment2, class: "form-control accompaniment2" %>
+	  <%= f.label :accompaniment2, 'Acompanhamento 2:' %>
+	  <%= f.text_field :accompaniment2, class: "form-control accompaniment2" %>
 	</div>
 
   </div>
@@ -50,23 +50,36 @@
 	</div>
 
 	<div class="form-group">
-		<%= f.label :salad2, 'Salada 3:' %>
-		<%= f.text_field :salad2,  class: "form-control salad2"%>
+		<%= f.label :salad2, 'Salada 2:' %>
+		<%= f.text_field :salad2,  class: "form-control salad2", list: "salad" %>
 	</div>
+
+<datalist id="salad">
+
+  <option value="FEIJÃO FRADINHO">
+  <option value="GRÃO DE BICO">
+  <option value="LENTILHA">
+  <option value="MACARRONESE">
+  <option value="TABULE">
+  <option value="SALADA HULK">  
+  <option value="SALPICÃO LIGHT">
+  <option value="SOJA"> 
+
+</datalist>
 
 	<div class="form-group">
 		<%= f.label :garnish, 'Guarnição:' %>
-		<%= f.text_field :garnish, class: "form-control garnish" %>
+		<%= f.text_field :garnish, class: "form-control garnish", list: "garnish" %>
 	</div>
 
 	<div class="form-group">
 		<%= f.label :dessert, 'Sobremesa:' %>
-		<%= f.text_field :dessert, class: "form-control dessert" %>
+		<%= f.text_field :dessert, class: "form-control dessert", list: "dessert" %>
 	</div>
 
 	<div class="form-group">
 		<%= f.label :juice, 'Suco:' %>
-		<%= f.text_field :juice, class: "form-control juice" %>
+		<%= f.text_field :juice, class: "form-control juice", list: "juice" %>
 	</div>
 
   </div>

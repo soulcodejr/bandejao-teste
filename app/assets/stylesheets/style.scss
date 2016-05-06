@@ -1,5 +1,4 @@
 // NAVBAR
-
 .navmenu-default, .navbar-default .navbar-offcanvas {
 	background-color: #282828;
 }
@@ -130,17 +129,7 @@ table tr {
 
 .nav-tabs > li > a{
 	border-radius: 0;
-}
-
-.nav-tabs > li.active > a{
-	border-width: 0 0 3px 0	;
-	border-bottom-color:  #31708f;
-}
-
- 
-
-.nav-tabs > li > a{
-	border-radius: 0;
+	margin-right:0;
 }
 
 .nav-tabs > li.active > a{
@@ -150,8 +139,10 @@ table tr {
 
 
 .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus{
-	border-bottom-width: 3px;
-	border-bottom-color:  #31708f;
+	border-bottom-width:3px;
+	border-bottom-color:#31708f;
+	border-top:0;
+	cursor:pointer;
 } 
 
 .nav-tabs, .nav-pills {
@@ -220,6 +211,10 @@ footer {
 .container.cont.form-container{border:1px solid #ddd;}
 form.new_lunch .btn.btn-danger.form-control{margin-bottom:5px;}
 .container.cont.form-container .text-center{padding:15px 0;margin-bottom:15px;overflow:hidden;}
-
 .container.cont.form-container .text-center button{width:50%;float:left;border-radius:0;}
 
+//SELECT
+.select-day{appearance:none;-webkit-appearance:none;-moz-appearance:none;text-indent:0.01px;-webkit-text-indent:0.01px;-moz-text-indent:0.01px;text-overflow:"";-webkit-text-overflow:"";-moz-text-overflow:"";background:#337ab7 url("seta.gif") no-repeat scroll right 12px top 13px;select::-ms-expand{display: none;}}
+.select-day:focus{background:#286090 url('seta-hover.gif') no-repeat right 12px top 13px;}
+.select-day:hover{background:#286090 url('seta-hover.gif') no-repeat right 12px top 13px;}
+.select-day::-ms-expand { display: none; }/* Remove seta padrão do IE*/

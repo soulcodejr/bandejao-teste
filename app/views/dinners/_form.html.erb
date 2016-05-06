@@ -1,5 +1,5 @@
 <div id="container_dinners">
-<%= form_for(@dinner, remote: true, html: {id: "registerDinner"}) do |f| %>
+<%= form_for(@dinner, remote: true, html: {id: "registerDinner", autocomplete: "off"}) do |f| %>
 <div class="row">
   <div class="col-md-6">
      <div class="form-group">
@@ -9,26 +9,38 @@
 
 <div class="form-group">
   <%= f.label :soup, 'Sopa:' %>
-  <%= f.text_field :soup, class: "form-control soup" %>
+  <%= f.text_field :soup, class: "form-control soup", list: "soup" %>
 </div>
+
+<datalist id="soup">
+
+  <option value="CANJA">
+  <option value="CANJIQUINHA">
+  <option value="CANJIQUINHA AO MOLHO">
+  <option value="DELÍCIA">
+  <option value="MINEIRA">
+  <option value="POLENTA AO MOLHO">
+  <option value="SOPA DE GRÃO DE BICO">
+  <option value="SOPA DE LEGUMES">  
+  <option value="SOPA DE LEGUMES COM MACARRÃO">
+  <option value="SOPA DE LENTILHA">
+  
+</datalist>
 
 <div class="form-group">
   <%= f.label :accompaniment1, 'Acompanhamento 1:' %>
-  <%= f.text_field :accompaniment1, class: "form-control accompaniment1"   %>
+  <%= f.text_field :accompaniment1, class: "form-control accompaniment1" %>
 </div>
-
 
 <div class="form-group">
   <%= f.label :accompaniment2, 'Acompanhamento 2:' %>
-  <%= f.text_field :accompaniment2, class: "form-control accompaniment2"   %>
+  <%= f.text_field :accompaniment2, class: "form-control accompaniment2" %>
 </div>
-
       
 <div class="form-group">
   <%= f.label :accompaniment3, 'Acompanhamento 3:' %>
-  <%= f.text_field :accompaniment3, class: "form-control accompaniment3"   %>
+  <%= f.text_field :accompaniment3, class: "form-control accompaniment3" %>
 </div>
-
 
   </div>
   <!-- col-md-6 -->
@@ -38,32 +50,151 @@
 
 <div class="form-group">
   <%= f.label :garnish, 'Guarnição:' %>
-  <%= f.text_field :garnish, class: "form-control garnish"   %>
+  <%= f.text_field :garnish, class: "form-control garnish", list: "garnish" %>
 </div>
 
+<datalist id="garnish">
+
+  <option value="ABÓBORA SAUTEÉ">
+  <option value="BATATA PALHA">
+  <option value="CENOURA SAUTÉE">
+  <option value="CENOURA VICK">
+  <option value="CHUCHU COM SALSA">
+  <option value="ESPAGUETE À CARBONARA">
+  <option value="ESPAGUETE AO ALHO E ÓLEO">
+  <option value="ESPAGUETE AO SUGO">
+  <option value="FAROFA">
+  <option value="POLENTA">
+  <option value="PURÊ DE BATATA">
+  <option value="QUIBEBE">
+
+</datalist>
 
 <div class="form-group">
   <%= f.label :protein1, 'Proteína 1:' %>
-  <%= f.text_field :protein1, class: "form-control protein1"   %>
+  <%= f.text_field :protein1, class: "form-control protein1", list: "protein" %>
 </div>
-
 
 <div class="form-group">
   <%= f.label :protein2, 'Proteína 2:' %>
-  <%= f.text_field :protein2, class: "form-control protein2"   %>
+  <%= f.text_field :protein2, class: "form-control protein2", list: "protein" %>
 </div>
 
+<datalist id="protein">
+
+  <option value="ALMÔNDEGAS AO MOLHO DE CALABRESA">
+  <option value="ALMÔNDEGAS DE CARNE">
+  <option value="ALMÔNDEGAS DE FRANGO">
+  <option value="ALMÔNDEGAS DE SOJA">
+
+  <option value="BIFE DE FÍGADO BOVINO">
+  <option value="BIFE SUÍNO">
+  <option value="BOLINHO DE GRÃO DE BICO">
+
+  <option value="CARNE MISTA">
+  <option value="CARNE MOÍDA DE SOJA">
+  <option value="CARRÉ">
+  <option value="COSTELA COM AGRIÃO">
+  <option value="COSTELA COM BATATA">
+  <option value="COXA E SOBRECOXA">
+  <option value="CUBOS DE FRANGO">
+
+  <option value="ESTROGONOFE DE CARNE">
+  <option value="ESTROGONOFE VEGETARIANO">
+
+  <option value="FÍGADO">
+  <option value="FÍGADO À LISBOETA">
+  <option value="FILÉ DE FRANGO À MILANESA">
+  <option value="FILÉ DE FRANGO GRELHADO">  
+  <option value="FRANGO ASSADO">
+  <option value="FRANGO ENSOPADO">
+  <option value="FRANGO XADREZ">
+  <option value="FRICASSÊ DE FRANGO">
+
+  <option value="GOULASH">
+
+  <option value="HAMBÚRGUER DE SOJA">
+
+  <option value="ISCA BOVINA ACEBOLADA">
+  <option value="ÍSCA DE FRANGO">
+  <option value="ÍSCA DE FRANGO ACEBOLADA">
+  
+  <option value="KIBE DE SOJA">
+  <option value="KIBE DE ABÓBORA">
+
+  <option value="LASANHA DE BERINJELA">  
+  <option value="LINGUIÇA TOSCANA">
+
+  <option value="MEXIDO DE OVOS">
+  <option value="MOELA COM BATATA">
+  <option value="MOLHO DE CACHORRO QUENTE">
+  
+  <option value="OMELETE">
+  <option value="OVOS MEXIDOS">
+
+  <option value="PANQUECA DE FRANGO">
+  <option value="PANQUECA DE SOJA">
+  
+  <option value="QUIBE DE SOJA">
+  <option value="QUICHE DE MILHO">
+
+  <option value="SASSAMI EMPANADO AO MOLHO DE MOSTARDA">
+  <option value="STEAK DE FRANGO">
+  <option value="SUFLÊ DE CENOURA">
+  <option value="SUFLÊ DE LEGUMES">
+  <option value="SUÍNO ASSADO AO MOLHO">
+
+  <option value="TORATA DE BATATA COM CARNE MOÍDA">
+  <option value="TORTA DE CEBOLA">
+  <option value="TORTA DE FRANGO">
+
+  <option value="VIRADO A PAULISTA">
+
+</datalist>
 
 <div class="form-group">
   <%= f.label :dessert, 'Sobremesa:' %>
-  <%= f.text_field :dessert, class: "form-control dessert"   %>
+  <%= f.text_field :dessert, class: "form-control dessert", list: "dessert" %>
 </div>
 
+<datalist id="dessert">
+  
+  <option value="BANANA">
+  <option value="DOCE">
+  <option value="DOCE DE LEITE">
+  <option value="DOCE INDIVIDUAL">
+  <option value="FRUTA">
+  <option value="GELATINA BICOLOR">
+  <option value="GELATINA COM LETE CONDENSADO">
+  <option value="GELÉIA CLORIDA">
+  <option value="LARANJA">
+  <option value="MANJAR DE COCO">
+  <option value="MELANCIA">
+  <option value="MELÃO">
+  <option value="PAÇOCA">
+  <option value="PÉ DE MOLEQUE">
+  <option value="PUDIM">
+  <option value="PUDIM DE BAUNILHA">
+  <option value="PUDIM DE CARAMELO">
+
+</datalist>
 
 <div class="form-group">
   <%= f.label :juice, 'Suco:' %>
-  <%= f.text_field :juice, class: "form-control juice"   %>
+  <%= f.text_field :juice, class: "form-control juice", list: "juice" %>
 </div>
+
+<datalist id="juice">
+
+  <option value="ABACAXI">
+  <option value="GOIABA">
+  <option value="GUARANÁ">
+  <option value="LARANJA">
+  <option value="LIMÃO">
+  <option value="MANGA">
+  <option value="UVA">
+
+</datalist>
 
 <div class="form-group">
 </div>

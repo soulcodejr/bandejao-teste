@@ -1,7 +1,7 @@
 @media screen and (min-width: 740px){
 	.responsive-nav{
 		display: none;
-	} 	
+	}
 }
 @media screen and (max-width: 740px){
 	.desktop-nav{
@@ -70,9 +70,4 @@ button.select-day{
 	width: 50%;
 	align-self: center;
 
-}
-
-.btn-lunch, .btn-dinner{
-	color: #fff;
-	background: #337AB7;
 }

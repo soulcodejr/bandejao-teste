@@ -42,7 +42,7 @@ class LunchesController < ApplicationController
     authorize User
     respond_to do |format|
       if @lunch.update(lunch_params)
-        format.html { redirect_to @lunch, notice: 'Dinner was successfully updated.' }
+        format.html { redirect_to @lunch, notice: 'Lunch was successfully updated.' }
         format.json { render :show, status: :ok, location: @lunch }
       else
         format.html { render :edit }

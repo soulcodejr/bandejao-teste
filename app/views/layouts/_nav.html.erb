@@ -11,7 +11,6 @@
 
 		<li><%= link_to 'HOME', root_path, method: :get %></li>
 		<li><a href="javascript:void(0)">SUGESTÃO</a></li>
-		<div class="desktop-nav">
 		<% unless current_user.nil? %>
 			<div class="desktop-nav">
 				<li><%= link_to 'Cadastrar', pages_new_path, method: :get %></li>
@@ -20,7 +19,6 @@
 				<li><%= link_to '<i class="fa fa-sign-out"></i> Sair'.html_safe , destroy_user_session_path, method: :delete %></li>
 			</div>
 		<% end %>
-		</div>
 		<li class="responsive-nav">
 		<% unless current_user.nil? %>
 			<div class="dropdown">
