@@ -211,10 +211,7 @@ function getSelectOptionValue(divSelect) {
       data: valueFormLunch,
       success: function(){
       	swal("O Almoço foi cadastrado com sucesso.");
-      } ,
-    error: function(xhr, textStatus, errorThrown){
-       sweetAlert("Oops...", "O Almoço não foi cadastrado! O campo data é obrigatório.", "error");
-    }
+      } 
       
    });
 
